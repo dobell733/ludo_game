@@ -126,13 +126,12 @@ class TestLudoGame(unittest.TestCase):
         self.assertEqual(expected, result)
 
     def test_case_15(self):
-        def test_case_13(self):
-            players = ['A', 'B']
-            turns = [('A', 6), ('A', 5), ('A', 6)]
-            game = LudoGame()
-            result = game.play_game(players, turns)
-            expected = ['5', 'R', 'H', 'H']
-            self.assertEqual(expected, result)
+        players = ['A', 'B']
+        turns = [('A', 6), ('A', 5), ('A', 6)]
+        game = LudoGame()
+        result = game.play_game(players, turns)
+        expected = ['5', 'R', 'H', 'H']
+        self.assertEqual(expected, result)
 
     def test_case_16(self):
         players = ['A', 'B']
